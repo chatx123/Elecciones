@@ -1,0 +1,78 @@
+public class Candidato
+{
+   private String nombre;
+   private String nDoc;
+   private String email;
+   private String genero;
+   private double telefono;
+   private String numPartido;
+   private int partidoP;
+
+  public Candidato(String nombre, String nDoc, String email, String genero, double telefono, String numPartido, int partidoP)
+  {
+      this.nombre=nombre;
+      this.nDoc=nDoc;
+      this.email=email;
+      this.genero=genero;
+      this.telefono=telefono;
+      this.numPartido=numPartido;
+      this.partidoP=partidoP;
+    }
+    public String getNombre()
+    {
+        return nombre;
+    }
+    public void setNombre(String nombre)
+    {
+        this.nombre=nombre;
+    }
+    public String getnDoc()
+    {
+        return nDoc;
+    }
+    public void setnDoc(String nDoc)
+    {
+        this.nDoc=nDoc;
+    }
+    public String getEmail()
+    {
+        return email;
+    }
+    public void setEmail(String email)
+    {
+        this.email=email;
+    }
+    public String getGenero ()
+    {
+        return genero;
+    }
+    public void setGenero(String genero)
+    {
+        this.genero=genero;
+    }
+    public double getTelefono()
+    {
+        return telefono;
+    }
+    public void setTelefono(double telefono)
+    {
+        this.telefono=telefono;
+    }
+    public String getNumPartido()
+    {
+        return numPartido;
+    }
+    public void setNumPartido(String numPartido)
+    {
+        this.numPartido=numPartido;
+    }
+    public int getPartidoP()
+    {
+        return partidoP;
+    }
+    public void setPartidoP(int partidoP)
+    {
+        this.partidoP=partidoP;
+    }
+
+}

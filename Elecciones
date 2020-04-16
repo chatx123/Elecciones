@@ -1,0 +1,39 @@
+public class Elecciones
+
+{
+    Candidato[] candidatos;
+    public Elecciones()
+    {
+        candidatos=new Candidato[2];
+
+        candidatos[0]=new Candidato("Julian", "1005025607","velpatron@gamil.com","Masculino", 425675438, "partidomor", 102);
+        candidatos[1]=new Candidato("Portilla", "1004025607","chaticobotia@gmail.com","Masculino", 325675438, "partidomar", 101);
+    }
+    public void calcularPartido()
+
+    {
+        int partido=0;
+
+        for(int i=0; i<2;i++)
+        {
+        if((candidatos[i].getPartidoP()>1)&&(candidatos[i].getPartidoP()<100))
+        {
+            partido=candidatos[i].getPartidoP();
+        }
+        else if((candidatos[i].getPartidoP()>=101)&&(candidatos[i].getPartidoP()<=105))
+        {
+
+        }
+        System.out.println("es Senador");
+    }
+
+}
+
+ public void mostrarCandidatos()
+ {
+     for(int i=0;i<2;i++)
+    {
+         System.out.println ("Nombre" + " = " + candidatos[i].getNombre() + " , " + "nDoc" + " = " + candidatos[i].getnDoc() + " , " + " email " + " = " + candidatos[i].getEmail() + " , " + "Genero" + " = " + candidatos[i].getGenero() + " " + " Telefono"+ candidatos[i].getTelefono() +"Nombre del partido" + " = " + candidatos[i].getNumPartido() +"Numero" + " = " + candidatos[i].getPartidoP());
+     }
+ }
+}
